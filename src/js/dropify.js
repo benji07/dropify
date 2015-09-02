@@ -156,6 +156,7 @@ Dropify.prototype.clearElement = function()
     this.file = null;
     this.input.val('');
     this.resetPreview();
+    this.input.trigger('change');
 };
 
 Dropify.prototype.setSize = function()
